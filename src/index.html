@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>淘宝网触屏版</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+  <div id="app"></div>
+  <!-- <script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script> -->
+  <script type='text/javascript'>
+  	var html = document.documentElement;
+  	window.rem = html.getBoundingClientRect().width / 25 ; // 获取全局的宽度 并计算 25rem 为一屏 宽
+	if (html.getBoundingClientRect().width > 1080) { // 当超过 1080 按照 iphone6的 标准尺寸显示
+	  window.rem = 15
+	}
+	html.style.fontSize = window.rem + 'px'; // 定义根元素的大小
+  </script>
+  <script type="text/javascript" src="/assets/app.js"></script>
+</body>
+</html>
