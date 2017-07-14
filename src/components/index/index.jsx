@@ -45,7 +45,8 @@ class Home extends React.Component{
 	componentWillMount () {
 		$ajax('get', 'slides')
 		.then((data) => {
-			this.setState({'slide.slideData': data.result})
+			let newValue = {...this.state.slide, slideData: data.result}
+			this.setState({'slide': newValue}) // react的setState 方法只能修改第一层级的
 		})
 	}
 

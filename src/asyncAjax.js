@@ -1,4 +1,4 @@
-const baseIp = 'http://10.0.92.29:3000/'
+const baseIp = 'http://10.0.92.157:3000/'
 let createXHR = function () {
 	if (window.XMLHttpRequest) {
 		return new XMLHttpRequest()

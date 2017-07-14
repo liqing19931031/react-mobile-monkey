@@ -51,18 +51,18 @@ const BasicExample = () => (
         ))}
       </div>
       <footer>
-        <div className='nav'>
+        <NavLink to="/index" className='nav'>
           <i className='glyphicon-home glyphicon'></i>
-          <NavLink to="/index">推荐</NavLink>
-        </div>
-        <div className='nav'>
+          推荐
+        </NavLink>
+        <NavLink to="/shop" className='nav'>
           <i className='glyphicon-fenlei glyphicon'></i>
-          <NavLink to="/shop">分类</NavLink>
-        </div>
-        <div className='nav'>
+          分类
+        </NavLink>
+        <NavLink to="/user" className='nav'>
           <i className='glyphicon-find glyphicon'></i>
-          <NavLink to="/user">发现</NavLink>
-        </div>
+          发现
+        </NavLink>
       </footer>
     </div>
   </Router>
